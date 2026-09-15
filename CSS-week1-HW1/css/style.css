@@ -6,16 +6,38 @@ body {
     margin: 0;
 }
 
-header { background-color: #1E3A8A; padding: 20px; } 
-nav { background-color: #1D4ED8; padding: 10px; } 
-main { background-color: #DBEAFE; font-size: 1.1rem; padding: 20px; } 
-footer { background-color: #1D4ED8; padding: 15px; }
+header { 
+    background-color: #1E3A8A; 
+    padding: 20px; 
+} 
 
+/* Cambie el elemento nav para que utilice inline-block y tenga una anchura de aproximadamente el 80%. */
+nav { 
+    background-color: #1D4ED8; 
+    padding: 10px; 
+    display: inline-block;
+    width: 80%;
+} 
+
+main { 
+    background-color: #DBEAFE; 
+    font-size: 1.1rem; 
+    padding: 20px; 
+} 
+
+footer { 
+    background-color: #1D4ED8; 
+    padding: 15px; 
+}
+
+/* Comente el estilo existente para el elemento li. */
+/* 
 li {
     display: flex;
     width: 35%;
     text-align: center;
 }
+*/
 
 h1 {
     text-align: left;
@@ -32,4 +54,33 @@ nav a {
     color: rgb(209, 213, 248);
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Selector descendente para dar estilo sólo a la imagen en el elemento nav (anchura de aprox. 10%) */
+nav img {
+    width: 10%;
+}
+
+/* 
+  Estilice la clase grid para utilizar una rejilla de dos columnas (40% cada una).
+  Se ajustan justify-content, align-items y row-gap para alinear los elementos.
+*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around; /* O space-between según prefieras */
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Selector descendente para dar estilo sólo a las imágenes de la clase grid (100% de su contenedor) */
+.grid img {
+    width: 100%;
+}
+
+/* Estilice la clase flex para utilizar flex con flex-wrap y justify-content */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
