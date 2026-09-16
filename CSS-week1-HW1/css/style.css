@@ -1,86 +1,57 @@
-/* Este único archivo le da diseño a las 3 páginas */
-
-body {
-    font-family: comic sans ms, sans-serif;
-    font-size: 20px;
-    margin: 0;
-}
-
-header { 
-    background-color: #1E3A8A; 
-    padding: 20px; 
-} 
-
-/* Cambie el elemento nav para que utilice inline-block y tenga una anchura de aproximadamente el 80%. */
-nav { 
-    background-color: #1D4ED8; 
-    padding: 10px; 
-    display: inline-block;
-    width: 80%;
-} 
-
-main { 
-    background-color: #DBEAFE; 
-    font-size: 1.1rem; 
-    padding: 20px; 
-} 
-
-footer { 
-    background-color: #1D4ED8; 
-    padding: 15px; 
-}
-
-/* Comente el estilo existente para el elemento li. */
-/* 
-li {
+/* Navegación con Flex */
+nav {
     display: flex;
-    width: 35%;
-    text-align: center;
-}
-*/
-
-h1 {
-    text-align: left;
-    font-family: comic sans ms, sans-serif;
-    color: #89b6fa;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    background: #333;
 }
 
-p {
-    line-height: 3.0;
-}
-
-/* Estilo para los enlaces del menú */
 nav a {
-    color: rgb(209, 213, 248);
+    color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Selector descendente para dar estilo sólo a la imagen en el elemento nav (anchura de aprox. 10%) */
-nav img {
-    width: 10%;
+nav a:hover {
+    transform: scale(1.1);
 }
 
-/* 
-  Estilice la clase grid para utilizar una rejilla de dos columnas (40% cada una).
-  Se ajustan justify-content, align-items y row-gap para alinear los elementos.
-*/
-.grid {
+/* Saltar al contenido */
+.saltar {
+    position: absolute;
+    left: -1000px;
+}
+
+.saltar:focus {
+    left: 10px;
+    top: 10px;
+}
+
+/* Imágenes */
+img {
+    width: 250px;
+    border: 3px solid #333;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Grid */
+.grid, .galeria {
     display: grid;
-    grid-template-columns: repeat(2, 40%);
-    justify-content: space-around; /* O space-between según prefieras */
-    align-items: center;
-    row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-/* Selector descendente para dar estilo sólo a las imágenes de la clase grid (100% de su contenedor) */
-.grid img {
-    width: 100%;
+/* nth-child */
+.galeria img:nth-child(2) {
+    border-radius: 30px;
 }
 
-/* Estilice la clase flex para utilizar flex con flex-wrap y justify-content */
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.galeria img:nth-child(3) {
+    border-radius: 5px;
 }
