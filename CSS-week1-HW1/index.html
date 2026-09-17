@@ -1,25 +1,1157 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Colombia</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Jeison Moreno - Ingeniería de Sistemas, Inteligencia Artificial, desarrollo de software y soluciones tecnológicas">
+
+    <title>Jeison Moreno | Ingeniería de Sistemas + IA</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- FUENTES -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
 </head>
+
+
 <body>
 
-<a class="saltar" href="#contenido">Saltar al contenido principal</a>
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="lugares.html">Lugares</a>
-    <a href="galeria.html">Galería</a>
-</nav>
+<!-- =====================================
+     FONDO TECNOLÓGICO
+===================================== -->
 
-<main id="contenido">
-    <h1>Colombia</h1>
-    <p>Colombia es un país con paisajes y culturas increíbles.</p>
-    <img src="https://tse4.mm.bing.net/th/id/OIP.R72vBvX8P2ib3ndkpoQr-gHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Paisaje de Colombia">
-</main>
+<div class="grid-background"></div>
+
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+
+<!-- =====================================
+     NAVBAR
+===================================== -->
+
+<header>
+
+    <div class="logo">
+
+        <span>&lt;</span>
+        JM
+        <span>/&gt;</span>
+
+    </div>
+
+
+    <nav id="menu">
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#servicios">Servicios</a>
+
+        <a href="#ia">IA</a>
+
+        <a href="#proyectos">Proyectos</a>
+
+        <a href="#sobre-mi">Sobre mí</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+
+    <button class="btn-ia"
+            onclick="abrirIA()">
+
+        <i class="fa-solid fa-robot"></i>
+
+        Hablar con IA
+
+    </button>
+
+
+    <button class="menu-btn"
+            onclick="mostrarMenu()">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="hero" id="inicio">
+
+
+    <div class="hero-content">
+
+
+        <div class="status">
+
+            <span class="punto"></span>
+
+            SISTEMA ONLINE
+
+        </div>
+
+
+        <p class="pre-title">
+
+            INGENIERÍA DE SISTEMAS • SOFTWARE • IA
+
+        </p>
+
+
+        <h1>
+
+            JEISON
+
+            <span>MORENO</span>
+
+        </h1>
+
+
+        <h2>
+
+            Construyendo el futuro
+            <strong>con tecnología.</strong>
+
+        </h2>
+
+
+        <p class="hero-description">
+
+            Soluciones tecnológicas inteligentes para empresas,
+            profesionales y proyectos que buscan transformar
+            sus procesos mediante software, automatización
+            e inteligencia artificial.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#servicios"
+               class="btn-primary">
+
+                Explorar servicios
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="#contacto"
+               class="btn-outline">
+
+                Contactarme
+
+            </a>
+
+        </div>
+
+
+        <div class="tech-stack">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>IA</span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TERMINAL -->
+
+    <div class="terminal">
+
+        <div class="terminal-header">
+
+            <div class="circles">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <p>jeisonmathyas@gmail.com:~</p>
+
+        </div>
+
+
+        <div class="terminal-body">
+
+            <p>
+                <span class="green">
+                    jeisonmathyas@gmail.com
+                </span>:~$
+                whoami
+            </p>
+
+
+            <p class="terminal-result">
+
+                Ingeniero de Sistemas
+
+            </p>
+
+
+            <p>
+
+                <span class="green">
+                    jeisonmathyas@gmail.com
+                </span>:~$
+                technology --list
+
+            </p>
+
+
+            <p class="terminal-result">
+
+                ✓ Software Development<br>
+
+                ✓ Artificial Intelligence<br>
+
+                ✓ Cybersecurity<br>
+
+                ✓ Cloud Computing<br>
+
+                ✓ Databases<br>
+
+                ✓ IT Support<br>
+
+                ✓ Automation<br>
+
+                ✓ SAP Solutions
+
+            </p>
+
+
+            <p>
+
+                <span class="green">
+                    jeisonmathyas@gmail.com
+                </span>:~$
+
+                <span class="cursor">
+                    █
+                </span>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     ESTADÍSTICAS
+===================================== -->
+
+<section class="stats">
+
+    <div>
+
+        <strong>∞</strong>
+
+        <span>
+            Posibilidades
+        </span>
+
+    </div>
+
+
+    <div>
+
+        <strong>24/7</strong>
+
+        <span>
+            Tecnología
+        </span>
+
+    </div>
+
+
+    <div>
+
+        <strong>AI</strong>
+
+        <span>
+            Inteligencia
+        </span>
+
+    </div>
+
+
+    <div>
+
+        <strong>360°</strong>
+
+        <span>
+            Soluciones
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SERVICIOS
+===================================== -->
+
+<section class="services section"
+         id="servicios">
+
+
+    <div class="section-title">
+
+        <p>
+            // MIS SERVICIOS
+        </p>
+
+        <h2>
+            Tecnología sin límites
+        </h2>
+
+        <span>
+            Soluciones integrales de ingeniería de sistemas.
+        </span>
+
+    </div>
+
+
+
+    <div class="services-grid">
+
+
+        <article class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-code"></i>
+
+            </div>
+
+            <h3>
+                Desarrollo Web
+            </h3>
+
+            <p>
+                Creación de páginas web modernas,
+                rápidas, responsivas e interactivas.
+            </p>
+
+            <a href="#contacto">
+                Saber más →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-brain"></i>
+
+            </div>
+
+            <h3>
+                Inteligencia Artificial
+            </h3>
+
+            <p>
+                Implementación de soluciones con IA,
+                automatización y asistentes inteligentes.
+            </p>
+
+            <a href="#ia">
+                Explorar IA →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-database"></i>
+
+            </div>
+
+            <h3>
+                Bases de Datos
+            </h3>
+
+            <p>
+                Diseño, administración y optimización
+                de bases de datos y consultas SQL.
+            </p>
+
+            <a href="#contacto">
+                Saber más →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+            <h3>
+                Ciberseguridad
+            </h3>
+
+            <p>
+                Buenas prácticas de seguridad,
+                protección de información y sistemas.
+            </p>
+
+            <a href="#contacto">
+                Saber más →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-cloud"></i>
+
+            </div>
+
+            <h3>
+                Cloud Computing
+            </h3>
+
+            <p>
+                Soluciones basadas en servicios
+                y plataformas de computación en la nube.
+            </p>
+
+            <a href="#contacto">
+                Saber más →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-gears"></i>
+
+            </div>
+
+            <h3>
+                Automatización
+            </h3>
+
+            <p>
+                Automatización de procesos para
+                mejorar productividad y eficiencia.
+            </p>
+
+            <a href="#contacto">
+                Saber más →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-headset"></i>
+
+            </div>
+
+            <h3>
+                Soporte TI
+            </h3>
+
+            <p>
+                Diagnóstico, soporte y acompañamiento
+                para solucionar problemas tecnológicos.
+            </p>
+
+            <a href="#contacto">
+                Saber más →
+            </a>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-network-wired"></i>
+
+            </div>
+
+            <h3>
+                Soluciones Empresariales
+            </h3>
+
+            <p>
+                Integración de tecnología para
+                optimizar procesos empresariales.
+            </p>
+
+            <a href="#contacto">
+                Saber más →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     IA
+===================================== -->
+
+<section class="ai-section section"
+         id="ia">
+
+
+    <div class="ai-content">
+
+
+        <div class="ai-label">
+
+            <i class="fa-solid fa-sparkles"></i>
+
+            NEXT GENERATION TECHNOLOGY
+
+        </div>
+
+
+        <h2>
+
+            Ingeniería +
+            <span>Inteligencia Artificial</span>
+
+        </h2>
+
+
+        <p>
+
+            La tecnología está evolucionando.
+            La inteligencia artificial permite automatizar,
+            analizar información, generar contenido,
+            optimizar procesos y crear nuevas experiencias
+            digitales.
+
+        </p>
+
+
+        <div class="ai-features">
+
+
+            <div>
+
+                <i class="fa-solid fa-robot"></i>
+
+                <span>
+                    Asistentes IA
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <span>
+                    Automatización
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>
+                    Análisis de datos
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <span>
+                    Procesos inteligentes
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <button class="btn-primary"
+                onclick="abrirIA()">
+
+            <i class="fa-solid fa-robot"></i>
+
+            Probar asistente IA
+
+        </button>
+
+    </div>
+
+
+    <div class="ai-circle">
+
+        <div class="ai-core">
+
+            <i class="fa-solid fa-brain"></i>
+
+        </div>
+
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     PROYECTOS
+===================================== -->
+
+<section class="projects section"
+         id="proyectos">
+
+
+    <div class="section-title">
+
+        <p>
+            // PROYECTOS
+        </p>
+
+        <h2>
+            Soluciones digitales
+        </h2>
+
+        <span>
+            Tecnología aplicada a problemas reales.
+        </span>
+
+    </div>
+
+
+
+    <div class="project-grid">
+
+
+        <article class="project">
+
+            <div class="project-number">
+                01
+            </div>
+
+            <i class="fa-solid fa-globe"></i>
+
+            <h3>
+                Plataforma Web
+            </h3>
+
+            <p>
+                Sistema web moderno para administrar
+                información y procesos empresariales.
+            </p>
+
+            <div class="tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="project">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <i class="fa-solid fa-robot"></i>
+
+            <h3>
+                Asistente Inteligente
+            </h3>
+
+            <p>
+                Asistente basado en inteligencia artificial
+                para responder preguntas y automatizar tareas.
+            </p>
+
+            <div class="tags">
+
+                <span>AI</span>
+                <span>Python</span>
+                <span>API</span>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="project">
+
+            <div class="project-number">
+                03
+            </div>
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <h3>
+                Analítica de Datos
+            </h3>
+
+            <p>
+                Transformación de datos en información
+                útil para apoyar la toma de decisiones.
+            </p>
+
+            <div class="tags">
+
+                <span>SQL</span>
+                <span>Data</span>
+                <span>BI</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SOBRE MÍ
+===================================== -->
+
+<section class="about section"
+         id="sobre-mi">
+
+
+    <div class="about-code">
+
+<pre>
+<span class="purple">class</span> <span class="blue">JeisonMoreno</span> {
+
+    <span class="purple">constructor</span>() {
+
+        <span class="blue">this</span>.passion =
+        <span class="green">"Technology"</span>;
+
+        <span class="blue">this</span>.focus =
+        <span class="green">"Innovation"</span>;
+
+        <span class="blue">this</span>.future =
+        <span class="green">"Artificial Intelligence"</span>;
+
+    }
+
+    <span class="purple">createSolutions</span>() {
+
+        <span class="purple">return</span>
+        <span class="green">"Let's build the future";</span>
+
+    }
+
+}
+</pre>
+
+    </div>
+
+
+
+    <div class="about-text">
+
+        <p class="section-label">
+            // SOBRE MÍ
+        </p>
+
+        <h2>
+            Tecnología con
+            <span>propósito.</span>
+        </h2>
+
+        <p>
+
+            Soy Jeison Moreno, estudiante y profesional
+            enfocado en el mundo de la ingeniería de sistemas,
+            la tecnología y la innovación.
+
+        </p>
+
+        <p>
+
+            Mi enfoque está en encontrar alternativas
+            tecnológicas para resolver problemas,
+            mejorar procesos y convertir ideas
+            en soluciones digitales.
+
+        </p>
+
+
+        <div class="skills">
+
+            <div>
+
+                <span>Desarrollo</span>
+
+                <div class="progress">
+                    <i style="width:90%"></i>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <span>IA & Automatización</span>
+
+                <div class="progress">
+                    <i style="width:85%"></i>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <span>Soluciones empresariales</span>
+
+                <div class="progress">
+                    <i style="width:88%"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CONTACTO
+===================================== -->
+
+<section class="contact section"
+         id="contacto">
+
+
+    <div class="section-title">
+
+        <p>
+            // INICIEMOS UN PROYECTO
+        </p>
+
+        <h2>
+            ¿Tienes un problema tecnológico?
+        </h2>
+
+        <span>
+            Convirtamos tu idea en una solución.
+        </span>
+
+    </div>
+
+
+    <form id="contactForm">
+
+
+        <div class="form-row">
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Tu nombre"
+                required
+            >
+
+
+            <input
+                type="email"
+                placeholder="Correo electrónico"
+                required
+            >
+
+        </div>
+
+
+        <select required>
+
+            <option value="">
+                Selecciona un servicio
+            </option>
+
+            <option>
+                Desarrollo Web
+            </option>
+
+            <option>
+                Inteligencia Artificial
+            </option>
+
+            <option>
+                Automatización
+            </option>
+
+            <option>
+                Bases de Datos
+            </option>
+
+            <option>
+                Ciberseguridad
+            </option>
+
+            <option>
+                Soporte TI
+            </option>
+
+            <option>
+                Otro
+            </option>
+
+        </select>
+
+
+        <textarea
+            rows="6"
+            placeholder="Cuéntame sobre tu proyecto..."
+            required>
+        </textarea>
+
+
+        <button
+            type="submit"
+            class="btn-primary">
+
+            Enviar mensaje
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<!-- =====================================
+     MODAL IA
+===================================== -->
+
+<div class="modal"
+     id="modalIA">
+
+
+    <div class="ai-chat">
+
+
+        <div class="chat-header">
+
+            <div>
+
+                <i class="fa-solid fa-robot"></i>
+
+                <strong>
+                    Jeison AI
+                </strong>
+
+            </div>
+
+
+            <button onclick="cerrarIA()">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <div class="chat-body"
+             id="chatBody">
+
+            <div class="bot-message">
+
+                🤖 Hola. Soy Jeison AI.
+
+                <br><br>
+
+                ¿En qué área tecnológica
+                necesitas ayuda?
+
+            </div>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Escribe tu pregunta..."
+                onkeydown="enterChat(event)"
+            >
+
+            <button onclick="enviarChat()">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        &lt;JM/&gt;
+
+    </div>
+
+
+    <p>
+
+        Jeison S. Moreno Sanchez
+        Cel. 3046151414 
+
+    </p>
+
+
+    <span>
+
+        Ingeniería de Sistemas
+        • Tecnología
+        • Inteligencia Artificial
+
+    </span>
+
+
+    <div class="social">
+
+        <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+    </div>
+
+
+    <small>
+
+        © 2026 Jeison Moreno.
+        Todos los derechos reservados.
+
+    </small>
+
+</footer>
+
+
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
